@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211104 22:03:13.584" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="E:\Projetos_J\Robotframework\SuiteSiteTestePratice\tests">
+<suite id="s1-s1" name="TesteSitePracticeBDD" source="E:\Projetos_J\Robotframework\SuiteSiteTestePratice\tests\TesteSitePracticeBDD.robot">
+<test id="s1-s1-t1" name="Caso de Teste 03: Listar Produtos">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211104 22:03:13.804" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211104 22:03:13.804" endtime="20211104 22:03:14.860"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:13.804" endtime="20211104 22:03:14.860"/>
+</kw>
+<kw name="Dado que estou na página home do site">
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://automationpractice.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211104 22:03:14.864" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20211104 22:03:14.863" endtime="20211104 22:03:19.783"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211104 22:03:19.788" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211104 22:03:19.783" endtime="20211104 22:03:19.788"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:14.863" endtime="20211104 22:03:19.788"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:14.862" endtime="20211104 22:03:19.788"/>
+</kw>
+<kw name="Quando eu passar o mouse por cima da categoria &quot;Women&quot; no menu principal superior de categorias.">
+<kw name="Passar o mouse por cima da categoria &quot;Women&quot; no menu principal superior de categorias." library="Resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="block_top_menu"]/ul/li[1]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20211104 22:03:19.790" level="INFO">Simulating Mouse Over on element '//*[@id="block_top_menu"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20211104 22:03:19.790" endtime="20211104 22:03:20.072"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:19.789" endtime="20211104 22:03:20.072"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:19.789" endtime="20211104 22:03:20.073"/>
+</kw>
+<kw name="E Clicar na sub categoria &quot;Summer Dresses&quot;">
+<kw name="Clicar na sub categoria &quot;Summer Dresses&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211104 22:03:20.074" level="INFO">Clicking element '//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20211104 22:03:20.074" endtime="20211104 22:03:22.232"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:20.073" endtime="20211104 22:03:22.232"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:20.073" endtime="20211104 22:03:22.232"/>
+</kw>
+<kw name="Então deve exibir a página com os produtos da categoria com o título Summer Dresses">
+<kw name="Conferir título da página com os produtos da categoria" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Summer Dresses - My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211104 22:03:22.238" level="INFO">Page title is 'Summer Dresses - My Store'.</msg>
+<status status="PASS" starttime="20211104 22:03:22.233" endtime="20211104 22:03:22.238"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:22.233" endtime="20211104 22:03:22.238"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:22.233" endtime="20211104 22:03:22.238"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211104 22:03:22.239" endtime="20211104 22:03:24.360"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:22.239" endtime="20211104 22:03:24.360"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:13.803" endtime="20211104 22:03:24.361"/>
+</test>
+<status status="PASS" starttime="20211104 22:03:13.607" endtime="20211104 22:03:24.363"/>
+</suite>
+<suite id="s1-s2" name="TestSitePractice" source="E:\Projetos_J\Robotframework\SuiteSiteTestePratice\tests\TestSitePractice.robot">
+<test id="s1-s2-t1" name="Caso de Teste 03: Listar Produtos">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211104 22:03:24.372" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211104 22:03:24.372" endtime="20211104 22:03:25.437"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:24.371" endtime="20211104 22:03:25.438"/>
+</kw>
+<kw name="Acessar a página home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://automationpractice.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211104 22:03:25.439" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20211104 22:03:25.438" endtime="20211104 22:03:30.268"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211104 22:03:30.273" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211104 22:03:30.268" endtime="20211104 22:03:30.273"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:25.438" endtime="20211104 22:03:30.273"/>
+</kw>
+<kw name="Passar o mouse por cima da categoria &quot;Women&quot; no menu principal superior de categorias." library="Resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="block_top_menu"]/ul/li[1]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20211104 22:03:30.275" level="INFO">Simulating Mouse Over on element '//*[@id="block_top_menu"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20211104 22:03:30.274" endtime="20211104 22:03:30.573"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:30.274" endtime="20211104 22:03:30.574"/>
+</kw>
+<kw name="Clicar na sub categoria &quot;Summer Dresses&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211104 22:03:30.575" level="INFO">Clicking element '//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20211104 22:03:30.574" endtime="20211104 22:03:32.583"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:30.574" endtime="20211104 22:03:32.584"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211104 22:03:32.585" endtime="20211104 22:03:34.706"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:32.584" endtime="20211104 22:03:34.706"/>
+</kw>
+<status status="PASS" starttime="20211104 22:03:24.370" endtime="20211104 22:03:34.707"/>
+</test>
+<status status="PASS" starttime="20211104 22:03:24.365" endtime="20211104 22:03:34.709"/>
+</suite>
+<status status="PASS" starttime="20211104 22:03:13.585" endtime="20211104 22:03:34.711"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TesteSitePracticeBDD">Tests.TesteSitePracticeBDD</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TestSitePractice">Tests.TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

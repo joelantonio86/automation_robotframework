@@ -20,5 +20,11 @@ Caso de Teste 02: Pesquisar produto não existente
      Digitar o nome do produto "ItemNãoExistente" no campo de Pesquisa
      Clicar no botão Pesquisar
      Conferir mensagem de erro "No results were found for your search "ItemNãoExistente""
-     
+
+Caso de Teste 03: Listar Produtos
+     Acessar a página home do site
+     Passar o mouse por cima da categoria "Women" no menu principal superior de categorias.
+     Clicar na sub categoria "Summer Dresses" 
+
+superior de categorias.
 # *** Keywords ***
