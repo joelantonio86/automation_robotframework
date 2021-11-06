@@ -24,7 +24,16 @@ Caso de Teste 02: Pesquisar produto não existente
 Caso de Teste 03: Listar Produtos
      Acessar a página home do site
      Passar o mouse por cima da categoria "Women" no menu principal superior de categorias.
-     Clicar na sub categoria "Summer Dresses" 
+     Clicar na sub categoria "Summer Dresses"
+     Conferir título da página com os produtos da categoria 
 
-superior de categorias.
+Caso de Teste 04: Adicionar Produtos no Carrinho
+     Acessar a página home do site
+     Digitar o nome do produto "t-shirt" no campo de pesquisa
+     Clicar no botão Pesquisar
+     Conferir se o produto "t-shirt" foi listado no site através da imagem
+     Clicar no botão "Add to cart" do produto.
+     Conferir mensagem de produto adcionado ao carrinho "Product successfully added to your shopping cart"
+     Clicar no botão "Proceed to checkout"
+     Conferir mensagem de valor total do produto "Total"
 # *** Keywords ***
