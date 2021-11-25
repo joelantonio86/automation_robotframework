@@ -9,7 +9,6 @@ ${URL}          http://automationpractice.com
 
 
 *** Keywords ***
-### Setup e Teardown
 
 
 Abrir navegador
