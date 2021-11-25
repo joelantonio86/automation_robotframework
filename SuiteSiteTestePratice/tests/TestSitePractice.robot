@@ -1,5 +1,4 @@
 *** Settings ***
-
 Resource            ../resource/Resource.robot
 Test Setup          Abrir navegador
 Test Teardown       Fechar navegador
@@ -36,4 +35,31 @@ Caso de Teste 04: Adicionar Produtos no Carrinho
      Conferir mensagem de produto adcionado ao carrinho "Product successfully added to your shopping cart"
      Clicar no botão "Proceed to checkout"
      Conferir mensagem de valor total do produto "Total"
+
+Caso de Teste 05: Remover produtos
+
+     Acessar a página home do site
+     Digitar o nome do produto "t-shirt" no campo de pesquisa
+     Clicar no botão Pesquisar
+     Conferir se o produto "t-shirt" foi listado no site através da imagem
+     Clicar no botão "Add to cart" do produto.
+     Conferir mensagem de produto adcionado ao carrinho "Product successfully added to your shopping cart"
+     Clicar no botão "Proceed to checkout"
+     Conferir mensagem de valor total do produto "Total"
+     Acessar a página home do site
+     Clicar no ícone carrinho de compras no menu superior direito.
+     Conferir se a tela de carrinho de compras foi exibida "Your shopping cart"
+     Clicar no botão de remoção de produtos (delete) no produto do carrinho.
+     Conferir mensagem de produto excluído do carrinho "Your shopping cart is empty."
+
+Caso de Teste 06: Adicionar Cliente
+     Acessar a página home do site
+     Clicar no botão superior direito “Sign in”.
+     Conferir se a página para fazer login deve ser exibida. "Please enter your email address to create an account."
+     Inserir um e-mail válido.
+     Clicar no botão "Create an account".
+     Preencher os campos obrigatórios.
+     Clicar em "Register"para finalizar o cadastro. 
+     Conferir se a página de gerenciamento da conta deve ser exibida. "Welcome to your account. Here you can manage all of your personal information and orders."
+
 # *** Keywords ***
